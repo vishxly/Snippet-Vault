@@ -62,12 +62,12 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
             ) : (
               <div className="flex space-x-4">
                 <Link href="/sign-in">
-                  <button className="text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">
+                  <button className="text-purple2 dark:text-vault hover:text-emerald-700 dark:hover:text-emerald-300 px-3 py-2 rounded-md text-sm font-medium transition duration-300 ease-in-out">
                     Unlock
                   </button>
                 </Link>
                 <Link href="/sign-up">
-                  <button className="bg-emerald-500 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-600 transition duration-300 ease-in-out transform hover:-translate-y-1">
+                  <button className="bg-yellow1 dark:text-white dark:bg-purple1 px-4 py-2 rounded-full text-sm font-medium hover:bg-emerald-600 transition duration-300 ease-in-out transform hover:-translate-y-1">
                     Create Vault
                   </button>
                 </Link>
@@ -84,10 +84,10 @@ const SnippetVaultLogo: React.FC = () => {
   return (
     <div className="flex-shrink-0 flex items-center space-x-2">
       <div className="relative">
-        <div className="w-12 h-12 bg-yellowish rounded-lg transform rotate-45 flex items-center justify-center">
+        <div className="w-12 h-12 bg-greyish rounded-lg transform rotate-45 flex items-center justify-center">
           <Lock className="h-6 w-6 text-white transform -rotate-45" />
         </div>
-        <div className="absolute top-0 left-0 w-12 h-12 bg-yellowish rounded-lg transform rotate-45 flex items-center justify-center animate-pulse">
+        <div className="absolute top-0 left-0 w-12 h-12 bg-greyish dark:bg-vault rounded-lg transform rotate-45 flex items-center justify-center animate-pulse">
           <Unlock className="h-6 w-6 text-white transform -rotate-45 opacity-0 hover:opacity-100 transition-opacity duration-300" />
         </div>
       </div>

@@ -18,6 +18,9 @@ const config: Config = {
         vault: "#abf62d",
         yellowish: "#fecd45",
         greyish: "#deb992",
+        yellow1: "#fdee30",
+        purple1: "#7d3780",
+        purple2: "#9E81FE"
       },
     },
   },
