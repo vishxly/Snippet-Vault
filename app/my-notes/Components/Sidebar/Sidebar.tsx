@@ -37,7 +37,7 @@ export default function Sidebar() {
         </div>
         <div className="flex gap-1 text-[19px] ">
           <span className={`font-bold text-purple-600`}>Snippet</span>
-          <span className="text-slate-400">Master</span>
+          <span className="text-slate-400">Vault</span>
         </div>
       </div>
     );
