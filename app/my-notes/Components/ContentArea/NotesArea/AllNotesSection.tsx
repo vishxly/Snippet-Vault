@@ -383,7 +383,7 @@ function SingleNote({ note }: { note: SingleNoteType }) {
 
   return (
     <div
-      className={`${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"} ${openContentNote ? "w-full" : "w-[390px]"} 
+      className={`${darkMode[1].isSelected ? "bg-black text-white" : "bg-white"} ${openContentNote ? "w-full" : "w-[390px]"} 
       max-sm:w-full rounded-md py-4   hover:translate-y-[-1px] ${selectedNote?._id === _id && !selectedNote.isTrash ? "border border-purple-600" : ""} `}
     >
       <NoteHeader

@@ -17,7 +17,7 @@ function ContentArea() {
   } = useGlobalContext();
   return (
     <div
-      className={`w-full ${darkMode[1].isSelected ? "bg-slate-700" : "bg-slate-100"} p-5 `}
+      className={`w-full ${darkMode[1].isSelected ? "bg-black" : "bg-slate-100"} p-5 `}
     >
       <TopBar />
       <NotesArea />
@@ -34,7 +34,7 @@ function TopBar() {
   } = useGlobalContext();
   return (
     <div
-      className={`${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"} rounded-lg flex justify-between items-center  p-3`}
+      className={`${darkMode[1].isSelected ? "bg-black text-white" : "bg-white"} rounded-lg flex justify-between items-center  p-3`}
     >
       <ProfileUser />
       <SearchBar />

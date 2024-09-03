@@ -21,7 +21,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white font-sans transition-colors duration-300">
+    <div className="min-h-screen bg-gray-100 dark:bg-black text-gray-900 dark:text-white font-sans transition-colors duration-300">
       <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Hero />
       <Features />
@@ -38,7 +38,7 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   const { userId } = useAuth();
 
   return (
-    <nav className="bg-white dark:bg-black shadow-md">
+    <nav className="bg-white dark:bg-smoky shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <SnippetVaultLogo />

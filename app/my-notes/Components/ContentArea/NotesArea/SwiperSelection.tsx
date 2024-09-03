@@ -105,7 +105,7 @@ export default function SwiperSelection() {
 
   return (
     <div
-      className={`${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"}  p-3 rounded-lg flex gap-5 `}
+      className={`${darkMode[1].isSelected ? "bg-black text-white" : "bg-white"}  p-3 rounded-lg flex gap-5 `}
     >
       {/* Second div */}
       <div className="overflow-x-auto w-[100%]    ">
@@ -126,7 +126,7 @@ export default function SwiperSelection() {
             {allTags.map((tag, index) => (
               <SwiperSlide
                 key={index}
-                className={`${tagsSelected[index] ? "bg-purple-600 text-white" : `${darkMode[1].isSelected ? "bg-slate-800" : "bg-white"} hover:text-purple-600   text-gray-400`}   p-1 rounded-md  `}
+                className={`${tagsSelected[index] ? "bg-purple-600 text-white" : `${darkMode[1].isSelected ? "bg-black" : "bg-white"} hover:text-purple-600   text-gray-400`}   p-1 rounded-md  `}
                 onClick={() => handleTagClick(index)}
               >
                 {tag.name}

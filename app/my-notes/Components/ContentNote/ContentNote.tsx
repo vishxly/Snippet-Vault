@@ -186,7 +186,7 @@ function ContentNote() {
   return (
     <div
       className={`  ${isMobile ? "w-4/5 mt-[50%] shadow-lg h-[1040px]" : "w-1/2"}  p-6 z-30   rounded-lg ${openContentNote ? "block " : "hidden"} h-[100%] pb-9
-      ${isMobile ? "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" : ""} ${darkMode[1].isSelected ? "bg-slate-800" : "bg-white"} `}
+      ${isMobile ? "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" : ""} ${darkMode[1].isSelected ? "bg-black" : "bg-white"} `}
     >
       {singleNote && (
         <div>
@@ -268,7 +268,7 @@ function ContentNoteHeader({
           onFocus={() => setOnFocus(true)}
           onMouseEnter={() => setOnFocus(true)}
           onMouseLeave={() => setOnFocus(false)}
-          className={`font-bold text-xl outline-none resize-none  h-auto    overflow-hidden w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white " : "bg-white text-black"} `}
+          className={`font-bold text-xl outline-none resize-none  h-auto    overflow-hidden w-full ${darkMode[1].isSelected ? "bg-black text-white " : "bg-white text-black"} `}
         />
       </div>
       <CloseIcon
@@ -498,7 +498,7 @@ function Description({
         onChange={onUpdateDescription}
         value={singleNote.description}
         placeholder="New Description..."
-        className={`text-sm outline-none  border ${isHovered ? "border-purple-600" : ""} rounded-lg p-2   w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white text-black"}`}
+        className={`text-sm outline-none  border ${isHovered ? "border-purple-600" : ""} rounded-lg p-2   w-full ${darkMode[1].isSelected ? "bg-black text-white" : "bg-white text-black"}`}
       />
     </div>
   );
@@ -691,7 +691,7 @@ function CodeBlock({
         className={`${darkMode[1].isSelected ? "bg-slate-600  " : " "}   h-[220px]  absolute flex-col gap-2 p-3 w-[250px]  rounded-md left-3 bg-slate-100 z-50 flex   text-slate-400`}
       >
         <div
-          className={`i${darkMode[1].isSelected ? "bg-slate-800 " : "bg-slate-200 "}p-1 rounded-md flex gap-1 mb-1`}
+          className={`i${darkMode[1].isSelected ? "bg-black " : "bg-slate-200 "}p-1 rounded-md flex gap-1 mb-1`}
         >
           <SearchIcon />
           <input

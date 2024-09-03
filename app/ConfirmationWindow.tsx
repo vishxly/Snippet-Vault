@@ -63,7 +63,7 @@ function ConfirmationWindow() {
         top: "30%",
         transform: "translateY(-50%)",
       }}
-      className={`shadow-md rounded-md md:w-[450px] w-[310px] ${openConfirmationWindow ? "fixed" : "hidden"} ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"}   py-8 pt-10  p-3  z-50  flex flex-col gap-2 items-center   `}
+      className={`shadow-md rounded-md md:w-[450px] w-[310px] ${openConfirmationWindow ? "fixed" : "hidden"} ${darkMode[1].isSelected ? "bg-black text-white" : "bg-white"}   py-8 pt-10  p-3  z-50  flex flex-col gap-2 items-center   `}
     >
       <span className="font-bold text-xl"> {`Are you sure?`}</span>
       <span className="text-center text-[13px] opacity-75 px-8">

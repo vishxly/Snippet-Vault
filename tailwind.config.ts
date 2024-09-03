@@ -20,7 +20,10 @@ const config: Config = {
         greyish: "#deb992",
         yellow1: "#fdee30",
         purple1: "#7d3780",
-        purple2: "#9E81FE"
+        purple2: "#9E81FE",
+        white1: "#6C72B9",
+        Black1: "#F3F3F3",
+        smoky: "#100C08"
       },
     },
   },

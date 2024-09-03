@@ -107,7 +107,7 @@ function TagsWindow() {
         marginRight: "auto",
         top: "45px",
       }}
-      className={`${openTagsWindow ? "fixed" : "hidden"} ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"}    h-[600px] max-sm:w-[430px] w-[60%] z-40 p-9   shadow-md rounded-md`}
+      className={`${openTagsWindow ? "fixed" : "hidden"} ${darkMode[1].isSelected ? "bg-black text-white" : "bg-white"}    h-[600px] max-sm:w-[430px] w-[60%] z-40 p-9   shadow-md rounded-md`}
     >
       <Header />
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
@@ -262,7 +262,7 @@ function SingleTag({ tag }: { tag: SingleTagType }) {
 
   return (
     <div
-      className={` ${darkMode[1].isSelected ? "bg-slate-800" : "bg-white"} p-2 rounded-lg flex gap-3 items-center justify-between px-4 `}
+      className={` ${darkMode[1].isSelected ? "bg-black" : "bg-white"} p-2 rounded-lg flex gap-3 items-center justify-between px-4 `}
     >
       <div className="flex gap-3 items-center">
         <div className="w-2 h-2 bg-purple-600 rounded-full"></div>

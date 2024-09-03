@@ -72,7 +72,7 @@ function AddTagWindow() {
         marginRight: "auto",
         top: "100px",
       }}
-      className={`${openNewTagsWindow ? "fixed" : "hidden"} max-sm:w-[350px] w-[500px] shadow-md ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white border"}     z-50 p-6 rounded-lg`}
+      className={`${openNewTagsWindow ? "fixed" : "hidden"} max-sm:w-[350px] w-[500px] shadow-md ${darkMode[1].isSelected ? "bg-black text-white" : "bg-white border"}     z-50 p-6 rounded-lg`}
     >
       <Header />
       <AddTagInput
@@ -152,7 +152,7 @@ function AddTagInput({
         value={tagName}
         onChange={(e) => onInputChange(e)}
         placeholder={placeholder}
-        className={`${darkMode[1].isSelected ? "bg-slate-700" : "bg-white border"} w-full  rounded-md p-2 mt-1 text-[12px] outline-none text-slate-600`}
+        className={`${darkMode[1].isSelected ? "bg-black" : "bg-white border"} w-full  rounded-md p-2 mt-1 text-[12px] outline-none text-slate-600`}
       />
       {errorMessage.length > 0 && (
         <div className="text-red-500 flex mt-2 gap-1 items-center ">
