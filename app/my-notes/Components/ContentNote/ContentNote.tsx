@@ -256,7 +256,7 @@ function ContentNoteHeader({
       <div className="flex   gap-2 w-full  ">
         <TitleOutlinedIcon
           sx={{ fontSize: 19 }}
-          className={`${onFocus ? "text-purple-600" : "text-slate-400"} mt-[4px]`}
+          className={`${onFocus ? "bg-green1" : "text-slate-400"} mt-[4px]`}
         />
         <textarea
           ref={textRef}
@@ -339,7 +339,7 @@ function NoteTags({
     <div className="flex text-[13px] items-center gap-2">
       <StyleOutlinedIcon
         sx={{ fontSize: 19 }}
-        className={`${hovered ? "text-purple-600" : "text-slate-400"}`}
+        className={`${hovered ? "bg-green1" : "text-slate-400"}`}
       />
       <div
         onMouseEnter={() => setHovered(true)}
@@ -486,7 +486,7 @@ function Description({
     <div className="flex gap-2  text-[12px]  mt-8">
       <DescriptionOutlinedIcon
         sx={{ fontSize: 18 }}
-        className={` mt-[9px] ${isHovered ? "text-purple-600" : "text-slate-400"}`}
+        className={` mt-[9px] ${isHovered ? "bg-green1" : "text-slate-400"}`}
       />
 
       <textarea
@@ -566,7 +566,7 @@ function CodeBlock({
     <div className="flex gap-2  text-[12px] text-slate-400 mt-8 relative">
       <CodeOutlinedIcon
         sx={{ fontSize: 18 }}
-        className={` mt-[9px] ${isHovered ? "text-purple-600" : "text-slate-400"}`}
+        className={` mt-[9px] ${isHovered ? "bg-green1" : "text-slate-400"}`}
       />
 
       <div

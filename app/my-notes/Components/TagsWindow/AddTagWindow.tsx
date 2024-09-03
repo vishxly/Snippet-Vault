@@ -231,7 +231,7 @@ function ButtonGroup({
       </button>
       <button
         onClick={handleClickedTag}
-        className="px-4 py-2   text-white bg-purple-600 rounded-md hover:bg-purple-700"
+        className="px-4 py-2   text-white bg-vault rounded-md hover:bg-purple-700"
       >
         {selectedTagToEdit ? "Edit Tag" : "Add Tag"}
       </button>

@@ -477,7 +477,7 @@ function NoteHeader({
     <div className="flex  justify-between   items-center     mx-4 ">
       <span
         onClick={() => clickedNoteTitle()}
-        className={`font-bold text-lg  w-[90%]   cursor-pointer hover:text-purple-600 ${darkMode[1].isSelected ? " text-white" : " text-black"}`}
+        className={`font-bold text-lg  w-[90%]   cursor-pointer hover:bg-green1 ${darkMode[1].isSelected ? " text-white" : " text-black"}`}
       >
         {truncateString(title, 60)}
       </span>
@@ -487,9 +487,7 @@ function NoteHeader({
           icon={
             <FavoriteBorderOutlinedIcon className="text-slate-400 cursor-pointer" />
           }
-          checkedIcon={
-            <FavoriteIcon className="text-purple-600 cursor-pointer" />
-          }
+          checkedIcon={<FavoriteIcon className="bg-green1 cursor-pointer" />}
           checked={isFavorite}
           onClick={handleClickedCheckbox}
         />
@@ -504,7 +502,7 @@ function NoteTags({ tags }: { tags: SingleTagType[] }) {
       {tags.map((tag, index) => (
         <span
           key={index}
-          className="bg-purple-100 text-purple-600 p-1 rounded-md px-2"
+          className="bg-purple-100 bg-green1 p-1 rounded-md px-2"
         >
           {tag.name}
         </span>
@@ -615,7 +613,7 @@ function NoteFooter({
         <div className={`flex gap-2 items-center`}>
           <span className="text-sm">Note has been moved to trash</span>
           <button
-            className="bg-purple-600 p-[4px] px-3 text-sm text-white rounded-md flex gap-1 items-center"
+            className="bg-vault p-[4px] px-3 text-sm text-white rounded-md flex gap-1 items-center"
             onClick={() => {
               toast.dismiss(t.id);
               resetNoteFunction(note._id);
@@ -679,7 +677,7 @@ function NoteFooter({
         <DeleteRoundedIcon
           onClick={trashNoteFunction}
           sx={{ fontSize: 17 }}
-          className={`cursor-pointer ${note.isTrash && "text-purple-600"} ${openContentNote ? "hidden" : ""}`}
+          className={`cursor-pointer ${note.isTrash && "bg-green1"} ${openContentNote ? "hidden" : ""}`}
         />
       </div>
     </div>

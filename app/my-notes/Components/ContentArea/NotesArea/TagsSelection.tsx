@@ -15,7 +15,7 @@ function TagsSelection() {
           exercises
         </div>
       </div>
-      <div className="bg-purple-600 p-1 rounded-md px-3 flex gap-1 items-center text-white">
+      <div className="bg-vault p-1 rounded-md px-3 flex gap-1 items-center text-white">
         <AddOutlinedIcon sx={{ fontSize: 18 }} />
         <span>Tag</span>
       </div>

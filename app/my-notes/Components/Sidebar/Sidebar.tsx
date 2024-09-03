@@ -9,6 +9,7 @@ import { SiCplusplus, SiJavascript, SiPython } from "react-icons/si";
 import { useGlobalContext } from "@/ContextApi";
 import getLanguageIcon from "@/app/utils/languageTextToIcon";
 import { useClerk } from "@clerk/nextjs";
+import { Code2 } from "lucide-react";
 
 export default function Sidebar() {
   const {
@@ -31,13 +32,13 @@ export default function Sidebar() {
 
   function Logo() {
     return (
-      <div className="flex gap-2 items-center">
-        <div className={`bg-purple-600 p-[6px] rounded-md`}>
-          <DataObjectIcon sx={{ fontSize: 27, color: "white" }} />
+      <div className="flex items-center gap-3 bg-gray-100 p-3 rounded-lg shadow-md">
+        <div className="bg-blue-600 p-2 rounded-md">
+          <Code2 size={24} color="white" />
         </div>
-        <div className="flex gap-1 text-[19px] ">
-          <span className={`font-bold text-purple-600`}>Snippet</span>
-          <span className="text-slate-400">Vault</span>
+        <div className="flex items-baseline gap-1">
+          <span className="text-xl font-bold text-blue-600">Snippet</span>
+          <span className="text-lg text-gray-600">Vault</span>
         </div>
       </div>
     );
@@ -81,7 +82,7 @@ export default function Sidebar() {
             <li
               key={index}
               onClick={() => clickedMenu(index)}
-              className={`flex  cursor-pointer select-none gap-2 items-center ${menu.isSelected ? "bg-purple-600 text-white" : "text-slate-400 hover:text-purple-600"}  p-[7px] px-2 rounded-md w-[80%]`}
+              className={`flex  cursor-pointer select-none gap-2 items-center ${menu.isSelected ? "bg-purple-500 text-white" : "text-slate-500 hover:bg-purple-500"}  p-[7px] px-2 rounded-md w-[80%]`}
             >
               {menu.icons}
               <span>{menu.name}</span>
@@ -94,7 +95,7 @@ export default function Sidebar() {
             <li
               key={index}
               onClick={() => clickedTagsAndLogOutMenu(index)}
-              className={`flex cursor-pointer select-none gap-2 items-center ${menu.isSelected ? "bg-purple-600 text-white " : "text-slate-400"}  p-[7px] px-2 rounded-md w-[80%] hover:text-purple-600`}
+              className={`flex cursor-pointer select-none gap-2 items-center ${menu.isSelected ? "bg-purple-500 text-white " : "text-slate-400"}  p-[7px] px-2 rounded-md w-[80%] hover:bg-green1`}
             >
               {menu.icons}
               <span>{menu.name}</span>

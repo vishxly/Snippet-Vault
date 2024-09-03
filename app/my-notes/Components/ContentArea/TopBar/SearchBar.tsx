@@ -48,7 +48,7 @@ function SearchBar() {
           )
         }
         className={`absolute flex gap-1 px-2 rounded-3xl max-md:px-1    p-1 
-      text-[13px] text-white top-[6px] right-[6px] items-center cursor-pointer select-none ${openContentNote ? "bg-purple-300" : "bg-purple-600"}`}
+      text-[13px] text-white top-[6px] right-[6px] items-center cursor-pointer select-none ${openContentNote ? "bg-purple-300" : "bg-vault"}`}
       >
         <AddOutlinedIcon sx={{ fontSize: 18 }} />
         <div className="max-md:hidden ">Snippet</div>

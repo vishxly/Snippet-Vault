@@ -23,7 +23,8 @@ const config: Config = {
         purple2: "#9E81FE",
         white1: "#6C72B9",
         Black1: "#F3F3F3",
-        smoky: "#100C08"
+        smoky: "#100C08",
+        green1: "#4ecb4a",
       },
     },
   },

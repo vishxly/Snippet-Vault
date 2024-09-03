@@ -34,7 +34,7 @@ function EmptyPlaceHolder({
               sharedUserId
             )
           }
-          className="bg-purple-600 p-[8px] pr-2  text-sm text-white rounded-md mt-2 justify-center items-center"
+          className="bg-vault p-[8px] pr-2  text-sm text-white rounded-md mt-2 justify-center items-center"
         >
           <AddOutlinedIcon sx={{ fontSize: 17, color: "white" }} />
           <span className="ml-1 mr-2">Add a new snippet</span>
