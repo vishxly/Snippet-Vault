@@ -418,6 +418,7 @@ function NoteHeader({
     selectedNoteObject: { setSelectedNote, selectedNote },
     isNewNoteObject: { setIsNewNote },
     searchQueryObject: { setSearchQuery },
+    darkModeObject: { darkMode },
   } = useGlobalContext();
 
   function clickedNoteTitle() {
@@ -476,7 +477,7 @@ function NoteHeader({
     <div className="flex  justify-between   items-center     mx-4 ">
       <span
         onClick={() => clickedNoteTitle()}
-        className={`font-bold text-lg  w-[90%]     cursor-pointer hover:text-purple-600 `}
+        className={`font-bold text-lg  w-[90%]   cursor-pointer hover:text-purple-600 ${darkMode[1].isSelected ? " text-white" : " text-black"}`}
       >
         {truncateString(title, 60)}
       </span>
