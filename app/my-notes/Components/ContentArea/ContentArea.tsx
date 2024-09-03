@@ -17,7 +17,7 @@ function ContentArea() {
   } = useGlobalContext();
   return (
     <div
-      className={`w-full ${darkMode[1].isSelected ? "bg-black" : "bg-slate-100"} p-5 `}
+      className={`w-full min-h-screen ${darkMode[1].isSelected ? "bg-black" : "bg-slate-100"} p-5 `}
     >
       <TopBar />
       <NotesArea />
