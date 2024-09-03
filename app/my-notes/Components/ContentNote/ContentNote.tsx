@@ -268,7 +268,7 @@ function ContentNoteHeader({
           onFocus={() => setOnFocus(true)}
           onMouseEnter={() => setOnFocus(true)}
           onMouseLeave={() => setOnFocus(false)}
-          className={`font-bold text-xl outline-none resize-none  h-auto  overflow-hidden w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"} `}
+          className={`font-bold text-xl outline-none resize-none  h-auto    overflow-hidden w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white " : "bg-white text-black"} `}
         />
       </div>
       <CloseIcon
@@ -498,7 +498,7 @@ function Description({
         onChange={onUpdateDescription}
         value={singleNote.description}
         placeholder="New Description..."
-        className={`text-sm outline-none  border ${isHovered ? "border-purple-600" : ""} rounded-lg p-2   w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white"}`}
+        className={`text-sm outline-none  border ${isHovered ? "border-purple-600" : ""} rounded-lg p-2   w-full ${darkMode[1].isSelected ? "bg-slate-800 text-white" : "bg-white text-black"}`}
       />
     </div>
   );
